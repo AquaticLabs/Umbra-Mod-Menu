@@ -1102,17 +1102,24 @@ namespace UmbraRoR
 
                             case 6: // Toggle No Equipment Cooldown
                                 {
-                                    Main.noEquipmentCooldown = !Main.noEquipmentCooldown;
+                                    ItemManager.isDropItemFromInventory = !ItemManager.isDropItemFromInventory;
+                                    ItemManager.isDropItemForAll = false;
                                     break;
                                 }
 
                             case 7: // Stack Inventory (Shrine of Chance)
                                 {
-                                    ItemManager.StackInventory();
+                                    Main.noEquipmentCooldown = !Main.noEquipmentCooldown;
                                     break;
                                 }
 
                             case 8: // Remove All Items from Inventory
+                                {
+                                    ItemManager.StackInventory();
+                                    break;
+                                }
+
+                            case 8:
                                 {
                                     ItemManager.ClearInventory();
                                     break;
