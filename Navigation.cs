@@ -1267,6 +1267,18 @@ namespace UmbraRoR
                                     break;
                                 }
 
+                            case 4: // Kill All Mobs
+                                {
+                                    Spawn.KillAllMobs();
+                                    break;
+                                }
+
+                            case 5: // Destroy Spawned Interactables
+                                {
+                                    Spawn.DestroySpawnedInteractables();
+                                    break;
+                                }
+
                             default:
                                 {
                                     break;
