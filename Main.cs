@@ -61,8 +61,6 @@ namespace UmbraRoR
 
         #endregion
 
-
-
         #region Enable Checks
         public static bool onChestsEnable = true;
         public static bool onChestsDisable = false;
@@ -603,7 +601,6 @@ namespace UmbraRoR
             }
         }
         #endregion
-
 
         #region Inputs
         private void CheckInputs()
